@@ -1,6 +1,6 @@
-test("pass",()=>{
- expect(1).toBe(1)
-});
+let solution = require("./main")
+let pass = solution.pass;
+
 
 
 // test("trapRainWater", () => {
@@ -26,3 +26,6 @@ test("pass",()=>{
 //         ])).toBe(8);
 // });
 
+test("pass", () => {
+    expect(pass).toBe(1)
+});

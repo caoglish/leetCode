@@ -1,9 +1,6 @@
 
 
 
-
-
-
 var trapRainWater = function (heightMap) {
     let xLen = heightMap[0].length
     let yLen = heightMap.length
@@ -18,7 +15,7 @@ var trapRainWater = function (heightMap) {
             let down = heightMap[i+1][j];
             
             let minNum=Math.min(up,right,down,left);
-            console.log(`x=${j},y=${i},self=${self},up=${up},left=${left},right=${right},down=${down},minNum=${minNum}`);
+            //console.log(`x=${j},y=${i},self=${self},up=${up},left=${left},right=${right},down=${down},minNum=${minNum}`);
             if(self<minNum){
                 count += minNum-self
             }
@@ -28,14 +25,20 @@ var trapRainWater = function (heightMap) {
 
 };
 
-console.log(trapRainWater([
-    [1, 4, 3, 1, 3, 2],
-    [3, 2, 1, 3, 2, 4],
-    [2, 3, 3, 2, 3, 1]
-]));
+// console.log(trapRainWater([
+//     [1, 4, 3, 1, 3, 2],
+//     [3, 2, 1, 3, 2, 4],
+//     [2, 3, 3, 2, 3, 1]
+// ]));
+
+    //    let index = v.charCodeAt(0) - codeOffset;
+    //    return index >= 0 && index < 26 ? morseCode[v.charCodeAt(0) - codeOffset] : "";
+let pass=1;
+
 
 module.exports = {
-    
+    pass: pass,
+   
     trapRainWater: trapRainWater
 
 }
