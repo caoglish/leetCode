@@ -34,11 +34,9 @@ var trapRainWater = function (heightMap) {
     //    let index = v.charCodeAt(0) - codeOffset;
     //    return index >= 0 && index < 26 ? morseCode[v.charCodeAt(0) - codeOffset] : "";
 let pass=1;
-
-
 module.exports = {
     pass: pass,
    
-    trapRainWater: trapRainWater
+    //flipAndInvertImage: flipAndInvertImage
 
 }
