@@ -1,7 +1,8 @@
-const uniqueMorseRepresentations = require("../solution/uniqueMorseRepresentations");
+/*global test  expect*/
+const uniqueMorseRepresentations = require('../solution/uniqueMorseRepresentations');
 
 
-test("uniqueMorseRepresentations", () => {
-    expect(uniqueMorseRepresentations(["gin", "zen", "gig", "msg"])).toBe(2);
+test('uniqueMorseRepresentations', () => {
+	expect(uniqueMorseRepresentations(['gin', 'zen', 'gig', 'msg'])).toBe(2);
 
 });

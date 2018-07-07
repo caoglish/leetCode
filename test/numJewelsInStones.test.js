@@ -1,12 +1,7 @@
-const numJewelsInStones = require("../solution/numJewelsInStones");
+/*global test  expect*/
+const numJewelsInStones = require('../solution/numJewelsInStones');
 
-
-
-
-
-
-
-test("numJewelsInStones", () => {
-    expect(numJewelsInStones("aA", "aAAbbbb")).toBe(3);
-    expect(numJewelsInStones("z", "ZZ")).toBe(0);
+test('numJewelsInStones', () => {
+	expect(numJewelsInStones('aA', 'aAAbbbb')).toBe(3);
+	expect(numJewelsInStones('z', 'ZZ')).toBe(0);
 });
