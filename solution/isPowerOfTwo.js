@@ -1,5 +1,4 @@
 var isPowerOfTwo = function (n) {
-
 	if (n === 1) {
 		return true;
 	}
@@ -17,10 +16,9 @@ var isPowerOfTwo1 = function (n) {
 	let l = Math.log2(n);
 	if (parseInt(l) === l) return true;
 	return false;
-
 };
 
 module.exports = {
-	isPowerOfTwo: isPowerOfTwo,
-	isPowerOfTwo1: isPowerOfTwo1
+	isPowerOfTwo,
+	isPowerOfTwo1
 };

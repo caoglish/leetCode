@@ -4,7 +4,6 @@ var hammingDistance = function (x, y) {
 	x = (x).toString(2);
 	y = (y).toString(2);
 
-
 	x = pad.substring(0, pad.length - x.length) + x;
 	y = pad.substring(0, pad.length - y.length) + y;
 

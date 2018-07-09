@@ -1,7 +1,5 @@
 var findMaxConsecutiveOnes = function (nums) {
 	return Math.max.apply(null, nums.join('').split('0').map((n) => n.length));
-
-
 };
 
 var findMaxConsecutiveOnes1 = function (nums) {
@@ -15,12 +13,9 @@ var findMaxConsecutiveOnes1 = function (nums) {
 			max = Math.max(count, max);
 			count = 0;
 		}
-
 	}
 	return max;
-
-}
-
+};
 
 module.exports = {
 	findMaxConsecutiveOnes,

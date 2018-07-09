@@ -7,11 +7,8 @@ var uniqueMorseRepresentations = function (words) {
 			return morseCode[v.charCodeAt(0) - codeOffset];
 		}).join('');
 	});
-
 	const morseSet = new Set(morseCodeList);
-
 	return morseSet.size;
 };
-
 
 module.exports = uniqueMorseRepresentations;
