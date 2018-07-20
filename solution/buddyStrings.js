@@ -1,4 +1,4 @@
-//work but very slow.
+//work but very slow. (over 2000ms)
 var buddyStrings = function (A, B) {
 
 	if(A.length !== B.length) return false;
@@ -13,7 +13,7 @@ var buddyStrings = function (A, B) {
 	return false;
 };
 
-//much quicker solution.
+//much quicker solution. (about 72ms)
 var buddyStrings1 = function (A, B) {
 	if (A.length !== B.length || A.length < 0 ) return false;
 	if (A === B && A.length > new Set(A).size) return true;
