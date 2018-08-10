@@ -6,5 +6,5 @@ test('toLowerCase', () => {
 });
 
 test('toLowerCase1', () => {
-    expect(toLowerCase1('HelloWorld')).toBe('helloworld');
+	expect(toLowerCase1('HelloWorld')).toBe('helloworld');
 });
