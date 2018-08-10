@@ -37,4 +37,4 @@ var buddyStrings1 = function (A, B) {
 module.exports = {
 	buddyStrings: buddyStrings,
 	buddyStrings1: buddyStrings1
-}
+};

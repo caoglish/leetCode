@@ -1,9 +1,4 @@
 /*global test  expect*/
-
-
-
-
-
 let testBuddyString = function (buddyStrings, i) {
 
 	test('buddyStrings' + i, () => {
