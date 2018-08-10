@@ -8,7 +8,7 @@ var toLowerCase1 = function (str) {
 
 	return str.split('').map((v)=>{
 		let index=upperCase.indexOf(v);
-		return index>=0? lowerCase[index]:v
+		return index>=0? lowerCase[index]:v;
 	}).join('');
 };
 
