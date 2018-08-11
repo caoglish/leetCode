@@ -1,4 +1,3 @@
-/*global test  expect*/
 const toGoatLatin = require('../solution/toGoatLatin');
 
 test('toGoatLatin', () => {

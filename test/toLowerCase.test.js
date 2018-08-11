@@ -1,4 +1,3 @@
-/*global test  expect*/
 const toLowerCase = require('../solution/toLowerCase').toLowerCase;
 const toLowerCase1 = require('../solution/toLowerCase').toLowerCase1;
 test('toLowerCase', () => {
