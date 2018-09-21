@@ -1,13 +1,6 @@
 const sortArrayByParity = require('../solution/sortArrayByParity');
-let oneOfArray = function (arr, arrlist) {
-	let compare = (array1, array2) => array1.length === array2.length && array1.every((value, index) => value === array2[index]);
-	for (let arrItem of arrlist) {
-		if (compare(arr, arrItem)) return true;
-	}
+const oneOfArray = require('../helper/helper').oneOfArray;
 
-	return false;
-
-};
 test('sortArrayByParity', () => {
 
 	expect(oneOfArray(sortArrayByParity([3, 1, 2, 4]), [
