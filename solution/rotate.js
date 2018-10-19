@@ -6,14 +6,9 @@
 var rotate = function (nums, k) {
 	let len = nums.length;
 	k = k % len;
-	if (k === 0) return nums;
-	return nums.splice(-k, k).concat(nums);
-
-
-
-
-
-
+	let right = nums.splice(-k, k);
+	nums.unshift.apply(nums, right);
+	return nums;
 };
 
 module.exports = rotate;
