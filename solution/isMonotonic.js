@@ -18,4 +18,4 @@ var isMonotonic = function (A) {
 	return true;
 
 };
-module.exports = isMonotonic
+module.exports = isMonotonic;

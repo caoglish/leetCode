@@ -5,14 +5,14 @@
  */
 var diStringMatch = function (S) {
 	let len = S.length;
-	let low = 0
-	let high = len
+	let low = 0;
+	let high = len;
 	let result = [];
 	for (let i = 0; i < len; i++) {
-		if (S[i] == "I") {
+		if (S[i] == 'I') {
 			result.push(low);
 			low++;
-		} else if (S[i] == "D") {
+		} else if (S[i] == 'D') {
 			result.push(high);
 			high--;
 		}
@@ -23,4 +23,4 @@ var diStringMatch = function (S) {
 
 };
 
-module.exports = diStringMatch
+module.exports = diStringMatch;

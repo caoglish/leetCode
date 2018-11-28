@@ -6,7 +6,7 @@ var projectionArea = function (grid) {
 	for (let i = 0; i < yLen; i++) {
 		//c1
 		c1 += grid[i].reduce((sum, v) => {
-			return sum += v !== 0 ? 1 : 0
+			return sum += v !== 0 ? 1 : 0;
 		}, 0);
 		//c2
 		c2 += Math.max(...grid[i]);
