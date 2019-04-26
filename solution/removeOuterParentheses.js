@@ -15,7 +15,6 @@ var removeOuterParentheses = function(S) {
 			}
 			count--;
 		}
-		
 	}
 	return newS;
 };
