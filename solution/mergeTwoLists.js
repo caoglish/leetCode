@@ -14,33 +14,23 @@
 
 
 var mergeTwoLists = function(l1, l2) {
-	let link=null; 
-	let root=null;
+	let link=new ListNode(0);
+	let root=link;
 	while(true){
-		let node;
-
-		if(l1===null&&l2===null){
-			break;
-		}else if((l1!==null&&l2===null)||(l2!==null&&l1!==null&&l1.val<=l2.val)){
-			node=new ListNode(l1.val);
+		if((l2!==null&&l1!==null&&l1.val<=l2.val)||(l1!==null&&l2===null)){
+			link.next=l1;
 			l1=l1.next;
-		}else if((l1===null&&l2!==null)||(l1!==null&&l2!==null&&l1.val>l2.val)){
-			node=new ListNode(l2.val);
+		}else if((l1!==null&&l2!==null&&l1.val>l2.val)||(l1===null&&l2!==null)){
+			link.next=l2;
 			l2=l2.next;
-		}
-
-		if(link==null){
-			link=node;
-			root=link;
 		}else{
-			link.next=node;
-			link=link.next;
+			break;
 		}
 
-
+		link=link.next;
 
 	}
-	return root;
+	return root.next;
 };
 
 function ListNode(val) {
