@@ -16,9 +16,6 @@ l1.next.next = new ListNode(4);
 let  l2= new ListNode(1);
 l2.next = new ListNode(3);
 l2.next.next = new ListNode(4);
-console.log(l1);
-
-console.log(l2);
 
 let treeExpect= new ListNode(1);
 treeExpect.next = new ListNode(1);
