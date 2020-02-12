@@ -1,1 +1,3 @@
-call npm run test
+REM call npm run test
+
+call npm run test -t balancedStringSplit
