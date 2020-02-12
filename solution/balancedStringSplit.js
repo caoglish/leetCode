@@ -1,4 +1,5 @@
 /**
+ * 1221. Split a String in Balanced Strings
  * @param {string} s
  * @return {number}
  */

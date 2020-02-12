@@ -17,12 +17,15 @@ var numberOfSteps = function (num) {
 };
 
 var numberOfSteps1 = function (num) {
-    if(!num) return 0;
-    let count=0;
-    while(!!num){
-        count +=(num&1)?2:1;
-        num>>=1;
+    if (!num) return 0;
+    let count = 0;
+    while (!!num) {
+        count += (num & 1) ? 2 : 1;
+        num >>= 1;
     }
-    return count-1;
+    return count - 1;
 };
-module.exports = {numberOfSteps,numberOfSteps1};
+module.exports = {
+    numberOfSteps,
+    numberOfSteps1
+};
