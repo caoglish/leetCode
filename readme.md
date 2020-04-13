@@ -10,4 +10,5 @@
 
 ## Folder structure
 solution: solution of leetcode problem.
+
 test: Jest testcase for the solution.
