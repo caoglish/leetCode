@@ -1,3 +1,8 @@
+/**
+ * 26. Remove Duplicates from Sorted Array
+ * @param {number[]} nums
+ * @return {number}
+ */
 var removeDuplicates = function (nums) {
 	if(nums.length<=1) return;
 	//due to nums length reduced dynamtically, so use nums.length rather than len=nums.length
